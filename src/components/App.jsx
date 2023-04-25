@@ -1,16 +1,31 @@
+import {Profile} from 'components/UserCard/Profile';   
+import user from 'user.json';
+import { StatisticSection } from 'components/statistics/StaticticSection';
+
+
+import { StatList } from 'components/statistics/StatList';
+import statisticData from 'statisticData.json';
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Profile
+      username = {user.username}
+      tag= {user.tag}
+      location= {user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+      />
+
+      <StatisticSection title="Upload stats" > 
+        <StatList 
+        stats={statisticData}/>
+      </StatisticSection>
+      
     </div>
+    
+    
+    
+
+
   );
 };
