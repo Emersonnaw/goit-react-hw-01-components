@@ -1,10 +1,12 @@
-import {Profile} from 'components/UserCard/Profile';   
 import user from 'user.json';
-import { StatisticSection } from 'components/statistics/StaticticSection';
-
-
-import { StatList } from 'components/statistics/StatList';
 import statisticData from 'statisticData.json';
+import friends from 'friends.json';
+import {Profile} from 'components/UserCard/Profile';   
+import { StatisticSection } from 'components/statistics/StaticticSection';
+import { StatList } from 'components/statistics/StatList';
+import { FriendList } from 'components/FriendList/FriendList.jsx';
+
+
 export const App = () => {
   return (
     <div>
@@ -21,6 +23,9 @@ export const App = () => {
         stats={statisticData}/>
       </StatisticSection>
       
+      <FriendList
+       items = {friends}
+        />
     </div>
     
     
