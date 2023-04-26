@@ -1,4 +1,5 @@
-import  css from 'components/statistics/Statistics.module.css'
+import PropTypes from 'prop-types';
+import  css from 'components/statistics/StatisticSection.module.css'
 export const StatisticSection = ({title, children}) => {
     return (
         <section className={css.statistics}>
@@ -7,3 +8,9 @@ export const StatisticSection = ({title, children}) => {
         </section>
     );
 }
+
+
+StatisticSection.propTypes = {
+title: PropTypes.string,
+children: PropTypes.object.isRequired
+};

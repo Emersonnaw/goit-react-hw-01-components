@@ -1,0 +1,20 @@
+.transactionHistory{
+    margin: 40px auto;
+    width:60%;
+}
+
+.tableRow{
+    background-color:#2196F3;
+
+}
+
+.tableHeader {
+    color: white;
+    font-size: 20px;
+    padding:10px
+}
+
+.tableBody:nth-child(odd) {
+    background-color: silver;
+}
+
