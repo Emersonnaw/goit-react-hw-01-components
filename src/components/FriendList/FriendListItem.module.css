@@ -10,3 +10,14 @@
     background-color: green;
 }
 
+.items{
+    display:flex;
+    width:200px;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 15px 70px;
+    gap:10px;
+
+    box-shadow: 5px 5px 10px;
+    
+}

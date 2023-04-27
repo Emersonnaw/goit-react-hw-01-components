@@ -28,8 +28,8 @@ export const StatList = ({stats})=> {
 
 
 StatList.propTypes = {
-    stats:PropTypes.object.isRequired,
-    children: PropTypes.node.isRequired,
-    label:PropTypes.string.isRequired,
-    percentage:PropTypes.number.isRequired
+    stats:PropTypes.array.isRequired,
+    children: PropTypes.node,
+    label:PropTypes.string,
+    percentage:PropTypes.number
 };

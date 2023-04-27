@@ -1,7 +1,8 @@
-
+.tableBody:nth-child(odd) {
+    background-color: silver;
+}
 
 .tableData {
     text-align:center;
     text-transform:capitalize;
-   
 }

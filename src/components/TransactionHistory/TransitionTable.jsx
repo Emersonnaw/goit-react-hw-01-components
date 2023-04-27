@@ -11,18 +11,12 @@ export const TransitionTable = ({transactionsList }) => {
                 <th className={css.tableHeader}>Currency</th>
                 </tr>
             </thead>
-        {transactionsList.map(item => {
-            return(
-                <tbody className={css.tableBody} key={item.id}>
-                    <TransitionUnit 
-                        type={item.type}
-                        amount={item.amount}
-                        currency={item.currency}
-                    />
-                </tbody>
-            );
-            
-        })}
+
+
+            <TransitionUnit 
+            transitionData= {transactionsList}
+            />
+
         </table>
     );
 
