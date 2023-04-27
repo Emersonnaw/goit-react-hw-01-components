@@ -5,7 +5,7 @@ export const TransitionUnit = ({type, amount, currency}) => {
         <>
             
             <tr>
-            <td className={css.tableData}>{type.split(/\s+/).map(word => word[0].toUpperCase() + word.substring(1)).join(' ')}</td>
+            <td className={css.tableData}>{type}</td>
             <td className={css.tableData}>{amount}</td>
             <td className={css.tableData}>{currency}</td>
             </tr>
