@@ -1,8 +1,12 @@
-.tableBody:nth-child(odd) {
-    background-color: silver;
+.tableRow:nth-child(even) {
+    background-color: rgb(222, 146, 146);
 }
+
+
 
 .tableData {
     text-align:center;
     text-transform:capitalize;
+   
 }
+
